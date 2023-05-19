@@ -55,10 +55,25 @@ export default {
                     </ul>
                 </div>
             </div>
-            <div class="col-6 relative" >
-                <img src="/public/dc-logo-bg.png"  alt="">
+            <div class="col-6 relative">
+                <img src="/public/dc-logo-bg.png" alt="">
             </div>
         </div>
+        <section class="w-100 p-5 relative z-Index">
+            <div class="container d-flex justify-content-between pend10rem align-items-center">
+                <button type="button" class="btn  btn-outline-secondary">SIGN-UP NOW!</button>
+                <div class="d-flex gap-3 align-items-center ">
+                    <a href="">FOLLOW US</a>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+            </div>
+        </section>
+        <section id="black">
+        </section>
     </footer>
 </template>
 
@@ -66,12 +81,9 @@ export default {
 footer {
     background-image: url("/public/footer-bg.jpg");
     background-size: cover;
-    height: 450px;
 }
-
 h4 {
     color: white;
-
 }
 
 li {
@@ -84,12 +96,44 @@ ul {
     padding: 0;
     margin-top: 20px;
 }
+
 .relative {
     position: relative;
 }
+
 img {
     position: absolute;
     top: -55px;
+}
+
+.z-Index {
+    z-index: 999;
+}
+
+footer section {
+    background-color: #303030;
+}
+
+button {
+    border: 2px solid #1b70ec;
+    color: white;
+    border-radius: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+i {
+    font-size: 30px;
+    color: gray;
+    
+}
+#black {
+    background-color: black;
+    padding: 1.6rem;
+}
+.pend10rem {
+    padding-right: 10rem;
 }
 
 </style>

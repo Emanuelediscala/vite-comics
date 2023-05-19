@@ -2,6 +2,14 @@
 //Definiamo il nome del componente ed eventualmente i componenti che usa (nessuno)
 export default {
   name: "AppHeader",
+  data(){
+    return {
+      links: ["characters","comics","movies","tv","games","collectibles","videos","fans","news","shop"]
+    }
+  },
+  methods:{
+  
+  }
 };
 </script>
 
@@ -14,17 +22,8 @@ export default {
         </div>
         <div>
           <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item d-flex">
+              <a  class="nav-link active" v-for="link in links" aria-current="page" href="#">{{link.toUpperCase()}}</a>
             </li>
           </ul>
         </div>
@@ -32,3 +31,19 @@ export default {
     </div>
   </header>
 </template>
+
+<style scoped>
+
+a:hover {
+  color: blue;
+  border-bottom: 4px solid blue;
+  transition: border-color 0.3s;
+}
+a{
+  color: black;
+  
+  
+
+}
+
+</style>

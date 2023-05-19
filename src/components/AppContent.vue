@@ -52,5 +52,6 @@ a {
 }
 section.bg-primary {
     z-index: 999;
+    position: relative;
 }
 </style>
