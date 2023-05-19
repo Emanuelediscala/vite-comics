@@ -2,7 +2,33 @@
 //Definiamo il nome del componente ed eventualmente i componenti che usa (nessuno)
 export default {
     name: "AppContent",
-};
+    data(){
+        return {
+            icons: [
+                {
+                    name:'DIGITAL COMICS',
+                    path:'/public/buy-comics-digital-comics.png'
+                },
+                {
+                    name: 'DC MERCHANDISE',
+                    path:'/public/buy-comics-merchandise.png'
+                },
+                {
+                    name:'SUBSCRIPTION',
+                    path:'/public/buy-comics-shop-locator.png'
+                },
+                {
+                    name:'COMIC SHOP LOCATOR',
+                    path:'/public/buy-comics-subscriptions.png'
+                },
+                {
+                    name:'DC POWER VISA',
+                    path:'/public/buy-dc-power-visa.svg'
+                }
+            ]
+    }
+}
+}
 </script>
 
 <template>
@@ -16,25 +42,9 @@ export default {
             <div class="container p-4">
                 <nav class="w-100">
                     <ul class="nav d-flex justify-content-around">
-                        <li class="nav-item d-flex align-items-center">
-                            <img src="/public/buy-comics-digital-comics.png" alt="">
-                            <a class="nav-link active" aria-current="page" href="#">DIGITAL COMICS</a>
-                        </li>
-                        <li class="nav-item d-flex align-items-center">
-                            <img src="/public/buy-comics-merchandise.png" alt="">
-                            <a class="nav-link" href="#">DC MERCHANDISE</a>
-                        </li>
-                        <li class="nav-item d-flex align-items-center">
-                            <img src="/public/buy-comics-subscriptions.png" alt="">
-                            <a class="nav-link" href="#">Subscription</a>
-                        </li>
-                        <li class="nav-item d-flex align-items-center">
-                            <img src="/public/buy-comics-shop-locator.png" alt="">
-                            <a class="nav-link" href="#">COMIC SHOP LOCATOR</a>
-                        </li>
-                        <li class="nav-item d-flex align-items-center">
-                            <img src="/public/buy-dc-power-visa.svg" alt="">
-                            <a class="nav-link" href="#">DC POWER VISA</a>
+                        <li v-for="el in icons" class="nav-item d-flex align-items-center" >
+                            <img :src="el.path" alt="">
+                            <a class="nav-link active" aria-current="page" href="#">{{ el.name }}</a>
                         </li>
                     </ul>
                 </nav>
