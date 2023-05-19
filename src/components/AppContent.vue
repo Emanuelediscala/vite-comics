@@ -6,18 +6,18 @@ export default {
 </script>
 
 <template>
-    <section class="bg-black w-100">
-        <div class="container p-5">
-            <a href="" class="text">Content Goes here</a>
-        </div>
-    </section>
-    <section class="bg-primary w-100">
-        <div class="container p-5">
-            <div>
-                <nav>
-                    <ul class="nav">
+    <main>
+        <section class="bg-black w-100">
+            <div class="container p-5">
+                <a href="" class="text">Content Goes here</a>
+            </div>
+        </section>
+        <section class="bg-primary w-100">
+            <div class="container p-4">
+                <nav class="w-100">
+                    <ul class="nav d-flex justify-content-around">
                         <li class="nav-item d-flex align-items-center">
-                            <img src="/public/buy-comics-digital-comics.png"  alt="">
+                            <img src="/public/buy-comics-digital-comics.png" alt="">
                             <a class="nav-link active" aria-current="page" href="#">DIGITAL COMICS</a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
@@ -39,8 +39,8 @@ export default {
                     </ul>
                 </nav>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 </template>
 
 <style scoped>
@@ -49,5 +49,8 @@ nav img {
 }
 a {
     color: white;
+}
+section.bg-primary {
+    z-index: 999;
 }
 </style>
