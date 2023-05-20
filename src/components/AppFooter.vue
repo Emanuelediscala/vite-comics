@@ -7,7 +7,7 @@ export default {
 
 <template>
     <footer>
-        <div class="container  d-flex">
+        <div class="container  d-flex p-3">
             <div class="row col-6 py-5">
                 <div class="col-4">
                     <h4>DC COMICS</h4>

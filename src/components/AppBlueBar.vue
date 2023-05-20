@@ -33,7 +33,7 @@ export default {
 
 <template>
         <section class="bg-primary w-100">
-            <div class="container p-4">
+            <div class="container p-3">
                 <nav class="w-100">
                     <ul class="nav d-flex justify-content-around">
                         <li v-for="el in icons" class="nav-item d-flex align-items-center" >
