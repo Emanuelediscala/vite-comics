@@ -14,7 +14,6 @@ export default {
 </script>
 
 <template>
-  <header class="w-100">
     <div class="container">
       <div class="d-flex justify-content-between p-2 align-items-center">
         <div>
@@ -29,7 +28,6 @@ export default {
         </div>
       </div>
     </div>
-  </header>
 </template>
 
 <style scoped>

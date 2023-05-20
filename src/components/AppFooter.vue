@@ -72,8 +72,6 @@ export default {
                 </div>
             </div>
         </section>
-        <section id="black">
-        </section>
     </footer>
 </template>
 
