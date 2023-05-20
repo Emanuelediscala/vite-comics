@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
         <section class="bg-primary w-100">
             <div class="container p-4">
                 <nav class="w-100">
