@@ -2,6 +2,7 @@
 import { stringifyExpression } from '@vue/compiler-core';
 
 
+
 //Definiamo il nome del componente ed eventualmente i componenti che usa (nessuno)
 export default {
     name: "AppContent",
@@ -27,7 +28,7 @@ export default {
     </section>
 </template>
 
-<style scoped >
+<style scoped>
 div#jumbo {
     background-image: url(../../public/jumbotron.jpg);
     background-size: cover;
