@@ -5,28 +5,28 @@ import { stringifyExpression } from '@vue/compiler-core';
 //Definiamo il nome del componente ed eventualmente i componenti che usa (nessuno)
 export default {
     name: "AppContent",
-    props:[card,{
-        thumb:String,
-        price: String,
-        series: String,
-        type:String
-    }]
+    props: {
+        card: [
+            {
+                thumb: String,
+                price: String,
+                series: String,
+                type: String
+            }
+        ]
+    }
 }
 
 </script>
 <template>
-        <section class=" bg-black w-100">
-            <div class="">
-                <a href="" class="text"></a>
-                <div v-for="card in ">
-                    <img :src="card.thumb" alt="">
-
-
-                </div>
-
+    <section class=" bg-black w-100">
+        <div>
+            <a href="" class="text"></a>
+            <div>
+                {{ card }}
             </div>
-        </section>
-    
+        </div>
+    </section>
 </template>
 
 <style scoped lang="scss">
