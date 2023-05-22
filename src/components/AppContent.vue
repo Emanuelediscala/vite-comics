@@ -6,10 +6,10 @@ import { stringifyExpression } from '@vue/compiler-core';
 export default {
     name: "AppContent",
     props:[{
-        thumb:Object,
-        price: Object,
-        series: Object,
-        type:Object
+        thumb:string,
+        price: string,
+        series: string,
+        type:string
     }]
 }
 
