@@ -59,7 +59,7 @@ export default {
                 <img src="/public/dc-logo-bg.png" alt="">
             </div>
         </div>
-        <section class="w-100 p-5 relative z-Index">
+        <section class="w-100 p-4 relative z-Index">
             <div class="container d-flex justify-content-between pend10rem align-items-center">
                 <button type="button" class="btn  btn-outline-secondary">SIGN-UP NOW!</button>
                 <div class="d-flex gap-3 align-items-center ">
@@ -75,7 +75,7 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 footer {
     background-image: url("/public/footer-bg.jpg");
     background-size: cover;

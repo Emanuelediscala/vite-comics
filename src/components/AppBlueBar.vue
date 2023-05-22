@@ -46,7 +46,7 @@ export default {
         </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 nav img {
     width: 50px;
 }

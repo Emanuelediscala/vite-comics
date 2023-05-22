@@ -1,22 +1,41 @@
 <script>
+import { stringifyExpression } from '@vue/compiler-core';
+
 
 //Definiamo il nome del componente ed eventualmente i componenti che usa (nessuno)
 export default {
     name: "AppContent",
-
+    props:[{
+        thumb:Object,
+        price: Object,
+        series: Object,
+        type:Object
+    }]
 }
 
 </script>
 <template>
-        <section class="bg-black w-100">
-            <div class="container p-5">
-                <a href="" class="text">-->Content Goes here&lt;--</a>
+        <section class=" bg-black w-100">
+            <div class="">
+                <a href="" class="text"></a>
+                <div v-for="card in cardlist">
+                    <img :src="card.thumb" alt="">
+
+
+                </div>
+
             </div>
         </section>
     
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+div {
+    background-image: url(../../public/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
 
 a {
     color: white;

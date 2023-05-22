@@ -32,7 +32,7 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 a:hover {
   color: blue;
   border-bottom: 4px solid blue;
