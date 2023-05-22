@@ -12,20 +12,22 @@ export default {
 
 </script>
 <template>
-    <section class=" bg-black w-100">
+    <section class=" bg-black w-100 relative">
         <div id="jumbo">
-            <a href=""></a>
         </div>
-        <div class="container d-flex flex-wrap p-5">
-            <div v-for="card in cardsList" class="widx6">
-                <img :src="card.thumb" alt="">
+        <button class="btn btn-primary btnabsolute">CURRENT SERIES</button>
+        <div class="container d-flex flex-wrap justify-content-center relative p-5">
+            <div v-for="card in cardsList" class="widx6 p-2">
+                <img :src="card.thumb"  alt="">
                 <p>{{ card.series }}</p>
             </div>
+            <button class="btn btn-primary">LOAD MORE</button>
         </div>
+        
     </section>
 </template>
 
-<style scoped lang="scss">
+<style scoped >
 div#jumbo {
     background-image: url(../../public/jumbotron.jpg);
     background-size: cover;
@@ -35,12 +37,21 @@ div#jumbo {
 .widx6 {
     width: calc(100% / 6);
 }
-
 img {
-    width: 75%;
-    height: 150px; 
-
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top ;
 }
+button {
+    width: 300px;
+}
+.btnabsolute {
+    position:absolute;
+    bottom:61%;
+    left: 400px;
+}
+
 p {
     font-weight: 600;
     color: white;
@@ -49,5 +60,8 @@ p {
 a {
     color: white;
     font-size: 24px;
+}
+.relative {
+    position: relative;
 }
 </style>
